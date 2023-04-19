@@ -1,0 +1,2 @@
+- Make templates \/
+- Make component map
