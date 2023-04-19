@@ -14,7 +14,7 @@ function gcli() {
         case 'gpm':
         default:
             return (function helper() {
-                console.log('Show help');
+                console.log('[gcli]: Show help');
             })();
     }
 }
