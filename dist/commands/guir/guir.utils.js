@@ -117,7 +117,7 @@ export { default as ${ComponentName} } from './${Component.getComponentFilename(
         const ComponentName = Component.getComponentName(componentName);
         const template = `
 import React, { FC } from 'react'
-import { Render } from '@geoiq_io/components.responsive'
+import { Render } from '@geoiq-ai/lib.responsive'
 ${screens.length
             ? `import { ${screens
                 .map((screen) => `${Component.getScreenComponentName(componentName, screen)}`)
@@ -126,7 +126,7 @@ ${screens.length
             : ''}
 const ${ComponentName}: FC = () => {
 
-  return <Render base={<></>}${screens
+  return <Render ${screens
             .map((screen) => ` ${screen}={<${Component.getScreenComponentName(componentName, screen)} />}`)
             .join('')} />
 }

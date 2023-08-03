@@ -2,5 +2,9 @@
   "header-2": {
     "name": "header-2",
     "path": "header-2"
+  },
+  "comp1": {
+    "name": "comp1",
+    "path": "comp1"
   }
 }

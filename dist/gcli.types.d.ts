@@ -1,19 +1,19 @@
-export declare type GlobalConfig = {
+export type GlobalConfig = {
     guir?: {
         rootDir: string;
     };
 };
-export declare type Args = Array<string>;
-export declare type BaseCommandKey = 'gpm' | 'guir';
-export declare type BaseCommands = {
+export type Args = Array<string>;
+export type BaseCommandKey = 'gpm' | 'guir';
+export type BaseCommands = {
     [key in BaseCommandKey]: Args;
 };
-export declare type GetBaseCommands = () => Partial<BaseCommands>;
-export declare type Log = (message: any) => void;
-export declare type LogError = (error: string | Error) => void;
-export declare type ReturnType<T extends object = {}> = {
+export type GetBaseCommands = () => Partial<BaseCommands>;
+export type Log = (message: any) => void;
+export type LogError = (error: string | Error) => void;
+export type ReturnType<T extends object = {}> = {
     error?: boolean;
 } & Partial<T>;
-export declare type AssertType<T> = {
+export type AssertType<T> = {
     error?: boolean;
 } & T;
